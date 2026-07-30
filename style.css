@@ -75,12 +75,16 @@ body {
     padding: 0 10px;
 }
 
-.user-info .user-avatar-small {
+.user-avatar-small {
     border: none;
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
     background-color: brown;
+}
+
+.user-info .user-avatar-small {
+    border: 2px dotted rgb(179, 164, 164);
 }
 
 .header .user-detail {
@@ -117,6 +121,80 @@ body {
 
 .main {
     border: 1px solid black;
-    background-color: oklch(0.93 0.01 255.67)
-    ;
+    background-color: oklch(0.93 0.01 255.67);
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    padding: 30px 20px;
+}
+
+.title-large {
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.main .project-section {
+    border: 1px solid black;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 36px 1fr;
+
+}
+
+.main .announcement-section {    
+    border: 1px solid black;
+
+}
+
+.main .trending-section {   
+    border: 1px solid black;
+
+}
+
+.project-card-container {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;    
+}
+
+.project-card p,
+.side-card p {
+    margin: 2px;
+}
+
+.project-card p:first-child,
+.side-card p:first-child {
+    font-weight: bold;
+}
+
+.project-card {
+    padding: 20px 10px 20px 20px;
+    border: 1px solid black;
+
+
+}
+
+.announcement-section .side-card {
+    padding: 25px;
+    border: 1px solid black;
+    font-size: 14px;
+    
+}
+
+.trending-section .side-card {
+    padding: 25px;
+    border: 1px solid black;
+    font-size: 14px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.trending-container {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
 }
