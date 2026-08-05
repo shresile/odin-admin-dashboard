@@ -1,6 +1,44 @@
 body {
     height: 100vh;
     width: 100vw;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+.header1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header2 {
+    font-size: 18px;
+    margin: 0px;    
+    font-weight: 600;
+}
+
+.header3 {
+    font-size: 16px;
+    margin: 0px;    
+    font-weight: 600;
+}
+
+.header4 {
+    font-size: 14px;
+    margin: 0px;    
+    font-weight: 600;
+}
+
+.general-text1 {
+    font-size: 15px;
+    margin: 0px;    
+    font-weight: 400;
+    color: hsl(0deg 0% 47.06%);
+}
+
+.general-text2 {
+    font-size: 12px;
+    margin: 0px;    
+    font-weight: 400;
+    color: hsl(0deg 0% 47.06%);
 }
 
 .layout {
@@ -17,7 +55,6 @@ body {
 }
 
 .sidebar {
-    border: 1px solid black;
     padding: 25px;
     background-color: oklch(0.63 0.14 240.35);
     grid-row: 1/3;
@@ -25,15 +62,14 @@ body {
     flex-direction: column;
     gap: 70px;
     justify-content: start;
+    color: white;
 }
 
-.sidebar .branding-section {
-    border: 1px solid black;
-
+.sidebar .icon path{
+    fill: white;
 }
 
 .sidebar .navigation-section {
-    border: 1px solid black;
     display: grid;
     gap: 10px;
 
@@ -47,13 +83,11 @@ body {
 }
 
 .sidebar .setting-section {
-    border: 1px solid black;
     display: grid;
     gap: 10px;
 }
 
 .header {
-    border: 1px solid black;
     background-color: oklch(1 0 0);
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -63,7 +97,6 @@ body {
 }
 
 .header .search-section {
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,7 +113,6 @@ body {
 }
 
 .header .user-info {
-    border: 1px solid black;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -101,7 +133,6 @@ body {
 }
 
 .header .user-detail {
-    border: 1px solid black;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -117,7 +148,6 @@ body {
 }
 
 .header .button-section {
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -133,7 +163,6 @@ body {
 }
 
 .main {
-    border: 1px solid black;
     background-color: oklch(0.93 0.01 255.67);
     display: grid;
     grid-template-columns: 2.5fr 1fr;
@@ -142,27 +171,10 @@ body {
     padding: 30px 20px;
 }
 
-.title-large {
-    font-size: 22px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
 .main .project-section {
-    border: 1px solid black;
     grid-row: 1/3;
     display: grid;
     grid-template-rows: 36px 1fr;
-
-}
-
-.main .announcement-section {    
-    border: 1px solid black;
-
-}
-
-.main .trending-section {   
-    border: 1px solid black;
 
 }
 
@@ -174,18 +186,13 @@ body {
 }
 
 .project-card p,
-.side-card p {
+.side-card p, 
+.user-detail p {
     margin: 2px;
-}
-
-.project-card p:first-child,
-.side-card p:first-child {
-    font-weight: bold;
 }
 
 .project-card {
     padding: 20px 10px 20px 20px;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -202,14 +209,12 @@ body {
 
 .announcement-section .side-card {
     padding: 25px;
-    border: 1px solid black;
     font-size: 14px;
     
 }
 
 .trending-section .side-card {
     padding: 25px;
-    border: 1px solid black;
     font-size: 14px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
