@@ -71,7 +71,7 @@ body {
 
 .sidebar .navigation-section {
     display: grid;
-    gap: 10px;
+    gap: 15px;
 
 }
 
@@ -84,7 +84,7 @@ body {
 
 .sidebar .setting-section {
     display: grid;
-    gap: 10px;
+    gap: 15px;
 }
 
 .header {
@@ -126,6 +126,7 @@ body {
     height: 3rem;
     width: 3rem;
     background-color: brown;
+    flex-shrink: 0;
 }
 
 .user-info .user-avatar-small {
