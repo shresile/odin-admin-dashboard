@@ -11,6 +11,11 @@ body {
     width: 70%;
 }
 
+.icon {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
 .sidebar {
     border: 1px solid black;
     padding: 25px;
@@ -34,6 +39,13 @@ body {
 
 }
 
+.inline-container {
+    display: inline-flex;  
+    align-items: center;  
+    gap: 1.25rem;              
+
+}
+
 .sidebar .setting-section {
     border: 1px solid black;
     display: grid;
@@ -53,13 +65,14 @@ body {
 .header .search-section {
     border: 1px solid black;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
+    gap: 1.25rem;
 }
 
 #search {
-    height: 80%;
-    width: 90%;
+    height: 50%;
+    width: 95%;
     border-radius: 20px;
     background-color: oklch(0.93 0.01 255.67);    
     border: none;
@@ -173,8 +186,18 @@ body {
 .project-card {
     padding: 20px 10px 20px 20px;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+}
 
+.project-card .svg-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    justify-content: end;
+    margin-right: 1.25rem;
 }
 
 .announcement-section .side-card {
