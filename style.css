@@ -197,7 +197,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    box-shadow: 2px 2px 6px hsl(215deg 13.64% 82.75%), 
+    /* inset shadow without round corner: a large x-offset 
+    with a slightly smaller spread-radius */
+    inset 40px 0px 0 -32px hsl(41.91deg 86.9% 55.1%);
+    background-color: white;
+    border-radius: 12px;
+   
 }
 
 .project-card .svg-container {
