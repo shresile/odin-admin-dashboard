@@ -94,6 +94,11 @@ body {
     grid-template-rows: 1fr 1.5fr;
     gap: 30px;
     padding: 20px;
+    /* box-shadow between header and main sections,
+    margin-bottom is added or the shadow can't be seen
+    margin-bottom = seconde value offset-y + fourth value <spread-radius> */
+    margin-bottom: 3px;
+    box-shadow: 0px 4px 2px -1px hsl(215deg 13.64% 82.75%);
 }
 
 .header .search-section {
@@ -133,6 +138,12 @@ body {
     border: 2px dotted rgb(179, 164, 164);
 }
 
+/* small icons for gintoki in user-info and trending sections */
+.gintoki {
+    background-image: url(img/gintoki.jpeg);
+    background-size: cover;
+}
+
 .header .user-detail {
     display: flex;
     justify-content: start;
@@ -146,6 +157,8 @@ body {
     height: 4rem;
     width: 4rem;
     background-color: brown;
+    background-image: url(img/gintoki.jpeg);
+    background-size: cover;
 }
 
 .header .button-section {
@@ -254,3 +267,20 @@ body {
     justify-content: start;
     gap: 10px;
 }
+
+/* small icons for kagura, shinpachi and katsura in trending sections */
+.kagura {
+    background-image: url(img/kagura.jpeg);
+    background-size: cover;
+}
+
+.shinpachi {
+    background-image: url(img/shinpachi.jpeg);
+    background-size: cover;
+}
+
+.katsura {
+    background-image: url(img/katsura.jpeg);
+    background-size: cover;
+}
+
